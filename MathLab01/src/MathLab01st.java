@@ -51,10 +51,10 @@ public class MathLab01st
 		System.out.println("=====================================================");
 		System.out.println("Square Perimeter:                 " + Geometry.squarePerimeter(side));
 		System.out.println("Pentagon Perimeter:               " + Geometry.pentagonPerimeter(side));
-//		System.out.println("Hexagon Perimeter:                " + Geometry.hexagonPerimeter(side));
-//		System.out.println("Octagon Perimeter:                " + Geometry.octagonPerimeter(side));
-//		System.out.println("Rectangle Perimeter:              " + Geometry.rectanglePerimeter(length,width));
-//		System.out.println("Circle Perimeter (circumference): " + Geometry.circumference(radius));
+		System.out.println("Hexagon Perimeter:                " + Geometry.hexagonPerimeter(side));
+		System.out.println("Octagon Perimeter:                " + Geometry.octagonPerimeter(side));
+		System.out.println("Rectangle Perimeter:              " + Geometry.rectanglePerimeter(length,width));
+		System.out.println("Circle Perimeter (circumference): " + Geometry.circumference(radius));
 		System.out.println("\n");
 	}
 	
@@ -125,11 +125,17 @@ class Geometry
 	{ 
 	    return 8 * s; 
 	}
+	 
 	
+	public static double rectanglePerimeter (double l, double w)                      
+	{ 
+	    return l * w; 
+	}
 
-
-
-	
+	public static double circumference (double r)                      
+	{ 
+	    return Math.PI * (2 * r); 
+	}
 	
 		
 	// 2D Areas
